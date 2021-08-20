@@ -1,0 +1,87 @@
+.navbar-inverse {
+  margin-bottom: 0;
+
+  border-color: transparent;
+  background-color: $color-deep-dark;
+  .navbar {
+    &-nav {
+      @include sm-min {
+        > li {
+          margin: 5px;
+        }
+      }
+      > .active > a {
+        background-color: #053159;
+        &:hover,
+        &:focus {
+          background-color: $color-primary-light;
+        }
+      }
+      > li > a {
+        transition: background-color 0.5s;
+
+        @include sm {
+          text-align: center;
+        }
+        @include sm-min {
+          border-radius: 4px;
+        }
+        &:hover,
+        &:focus {
+          background-color: $color-primary;
+        }
+      }
+    }
+    &-left {
+      @include sm-min {
+        > li {
+          margin: 5px 5px 5px 0;
+        }
+      }
+    }
+    &-right {
+      @include sm-min {
+        > li {
+          margin: 5px 0 5px 5px;
+        }
+      }
+      @include sm {
+        margin-top: -7.5px;
+      }
+    }
+    &-header {
+      text-align: center;
+    }
+    &-toggle {
+      float: none;
+
+      margin-right: 0;
+    }
+  }
+}
+
+.panel {
+  background-color: darken($color-white, 7%);
+  &:not(:last-of-type) {
+    margin-bottom: $gap * 2;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &-info {
+    border: none;
+    > .panel-heading {
+      letter-spacing: 0.08em;
+
+      color: $color-white;
+      border: none;
+      background-color: $color-accent;
+
+      font-size: 1.25rem;
+    }
+  }
+  &-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+  }
+}
