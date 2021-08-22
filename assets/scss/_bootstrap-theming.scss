@@ -61,7 +61,7 @@
 }
 
 .panel {
-  background-color: darken($color-white, 7%);
+  background-color: $color-gray-light;
   &:not(:last-of-type) {
     margin-bottom: $gap * 2;
   }
@@ -85,3 +85,31 @@
     border-radius: 0 0 4px 4px;
   }
 }
+
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+.user-login {
+  position: relative;
+  &__tabs {
+    position: absolute;
+    top: 0;
+    right: $gap;
+    margin-right: -5px;
+    border: none;
+    a {
+      padding: 14px 5px 12px !important;
+      color: $color-gray;
+      border: none !important;
+      background-color: transparent !important;
+  }
+  .active a {
+    color: $color-white !important;
+  }
+  }
+}
+
