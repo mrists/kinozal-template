@@ -61,10 +61,187 @@
 <div class="container">
   <div class="row">
     <main class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
-      <p>MAIN</p>
+
+      <div class="site-search panel panel-info hidden-md hidden-lg">
+        <div class="panel-heading">Поиск</div>
+        <div class="panel-body">
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control" action="search" placeholder="Поиск по сайту">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-login panel panel-info hidden-md hidden-lg">
+        <div class="panel-heading">Пользователь</div>
+        <div class="panel-body">
+
+            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#user-login-main" aria-controls="user-login-main" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#user-registration-main" aria-controls="user-registration-main" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="user-login__content tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
+                <form action="login">
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Логин">
+                </div>
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Пароль">
+                </div>
+                  <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
+                </form>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
+                <form action="register">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Пароль">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Email">
+                  </div>
+                    <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <section class="new-films">
+        <h1 class="new-films__title">Новые фильмы</h1>
+        <div class="new-films-row row">
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1266931.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Стражи галактики</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1289488.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Занесло</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1341151.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Из машины</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Выхода нет</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1393263.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Человек муравей</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Люси</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1401663.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Марсианин</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1415999.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Дочь Бога</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1423264.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Месть от кутюр</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1441076.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">5ять</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1453229.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Люди Икс</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+            <div class="new-films-item__thumbnail thumbnail">
+              <img class="new-films-item__image" src="assets/img/films/1455536.jpg" alt="film">
+              <div class="new-films-item__caption caption">
+                <h3 class="new-films-item__title">Иллюзия обмана 2</h3>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+      <section>
+        ТОП за неделю
+      </section>
     </main>
     <aside class="left-sidebar col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
-      <div class="vertical-slider panel panel-info">
+      <div class="vertical-slider panel panel-info visible-md visible-lg">
         <div id="vertical-carousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#vertical-carousel" data-slide-to="0" class="active"></li>
@@ -100,7 +277,7 @@
         </div>
       </div>
 
-      <div class="site-search panel panel-info">
+      <div class="site-search panel panel-info visible-md visible-lg">
         <div class="panel-heading">Поиск</div>
         <div class="panel-body">
           <div class="input-group input-group-lg">
@@ -114,7 +291,7 @@
         </div>
       </div>
 
-      <div class="user-login panel panel-info">
+      <div class="user-login panel panel-info visible-md visible-lg">
         <div class="panel-heading">Пользователь</div>
         <div class="panel-body">
 

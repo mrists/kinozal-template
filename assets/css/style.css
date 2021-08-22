@@ -129,6 +129,58 @@ a:hover, a:focus {
   font-size: 1.15rem;
 }
 
+.main .site-search {
+  margin-bottom: 45px;
+}
+.main .user-login {
+  margin-bottom: 60px !important;
+}
+
+.new-films {
+  overflow: hidden;
+}
+.new-films__title {
+  font-size: 3rem;
+  font-family: "PT Serif", serif;
+  margin-bottom: 3rem;
+  margin-top: -10px;
+  line-height: 1.1;
+  position: relative;
+}
+.new-films__title::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  border-bottom: 3px solid #f0ad4f;
+  margin: 0.85em 0 0 15px;
+}
+.new-films-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+  margin-bottom: -15px;
+}
+.new-films-item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-bottom: 15px;
+}
+.new-films-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.new-films-item__thumbnail {
+  margin-bottom: 0;
+}
+
 .vertical-slider {
   border-radius: 4px;
   overflow: hidden;

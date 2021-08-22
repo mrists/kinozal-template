@@ -1,3 +1,66 @@
 .main {
   @extend %margin-bottom-lg;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+  .user-login {
+    margin-bottom: $gap * 4 !important;
+  }
 }
+
+.new-films {
+  overflow: hidden;
+  &__title {
+    font-size: 3rem;
+    font-family: $font-header;
+    margin-bottom: 3rem;
+    margin-top: -$gap-md;
+    line-height: 1.1;
+    position: relative;
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      border-bottom: 3px solid $color-accent-light;
+      margin: 0.85em 0 0 15px;
+    }
+  }
+
+  &-row {
+    margin-right: -$gap-sm;
+    margin-left: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
+    margin-bottom: $gap;
+    &__title {
+      @include text-shortener;
+      font-size: 1rem;
+      color: #333333;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+    }
+
+    &__thumbnail {
+      margin-bottom: 0;
+
+    }
+  }
+}
+// .main__title {
+//   position: relative;
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     background-color: $color-accent;
+//     height: 2px;
+//     width: 100%;
+//     bottom: 0;
+//   }
+// }
