@@ -82,9 +82,9 @@
 }
 
 .thumbnail {
-  -webkit-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  transition: background-color 0.25s;
+  -webkit-transition: background-color 0.2g5s;
+  -o-transition: background-color 0.2g5s;
+  transition: background-color 0.2g5s;
 }
 
 html {
@@ -191,16 +191,54 @@ a:hover, a:focus {
   font-size: 0.8rem;
 }
 
-.main {
-  min-height: 200vh;
+.film-rating__body {
+  padding-right: 0;
+  padding-left: 0;
 }
 
+.main {
+  min-height: 300vh;
+}
+
+.film-rating__list {
+  margin-bottom: 0;
+}
+.film-rating__item {
+  margin-right: -1px;
+  margin-left: -1px;
+  background-color: transparent;
+  color: #165690 !important;
+  padding-right: 50px;
+}
+.film-rating__item:first-child {
+  border-top: none;
+  border-radius: 0;
+}
+.film-rating__item:last-child {
+  border-bottom: none;
+  border-radius: 0;
+}
+.film-rating__item:hover, .film-rating__item:focus {
+  border-color: #df8a13;
+  color: #ffffff !important;
+  background-color: #df8a13 !important;
+}
+.film-rating__item:hover .badge, .film-rating__item:focus .badge {
+  background-color: #000000;
+}
+.film-rating__badge {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li {
     margin: 5px;
@@ -215,7 +253,6 @@ a:hover, a:focus {
     margin: 5px 0 5px 5px;
   }
 }
-
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
@@ -224,7 +261,6 @@ a:hover, a:focus {
     margin-top: -7.5px;
   }
 }
-
 @media (max-width: 575.8px) {
   .header-logo__title {
     font-size: 2.5rem;

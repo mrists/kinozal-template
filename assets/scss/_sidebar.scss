@@ -75,6 +75,53 @@ $image-size-witch-padding: $image-size + $gap-md;
     
 }
 
+.film-rating__body {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .main {
-    min-height: 200vh;
+    min-height: 300vh;
+}
+
+.film-rating {
+    &__body {
+
+    }
+    &__list {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        margin-right: -1px;
+        margin-left: -1px;
+        background-color: transparent;
+        color: $color-primary !important;
+        padding-right: 50px;
+        &:first-child {
+            border-top: none;
+            border-radius: 0;
+        }
+        &:last-child {
+            border-bottom: none;
+            border-radius: 0;
+        }
+        &:hover,
+        &:focus {
+            border-color: $color-accent;
+            color: $color-white !important;
+            background-color: $color-accent !important;
+            .badge {
+                background-color: $color-black;
+            }
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        right: $gap;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
 }
