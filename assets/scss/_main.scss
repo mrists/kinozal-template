@@ -17,6 +17,7 @@
     margin-bottom: 3rem;
     margin-top: -$gap-md;
     line-height: 1.1;
+    color: $color-gray-title;
     position: relative;
     &::after {
       content: "";
@@ -38,29 +39,90 @@
     padding-right: $gap-sm;
     padding-left: $gap-sm;
     margin-bottom: $gap;
+    &:hover {
+      .new-films-item__thumbnail {
+        background-color: $color-accent;
+      }
+      .new-films-item__title {
+        color: $color-white
+      }
+    }
+  
     &__title {
       @include text-shortener;
       font-size: 1rem;
-      color: #333333;
+      color: $color-gray-title;
       font-weight: 700;
       text-align: center;
       margin: 0;
+      transition: color 0.25s;
     }
 
     &__thumbnail {
       margin-bottom: 0;
-
+      transition: background-color 0.25s;
     }
   }
 }
-// .main__title {
-//   position: relative;
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     background-color: $color-accent;
-//     height: 2px;
-//     width: 100%;
-//     bottom: 0;
-//   }
-// }
+
+.top-films {
+  overflow: hidden;
+  position: relative;
+
+  &-row {
+    margin-right: -$gap-sm;
+    margin-left: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
+    margin-bottom: $gap;
+    &:hover {
+      .top-films-item__thumbnail {
+        background-color: $color-accent;
+      }
+      .top-films-item__title {
+        color: $color-white
+      }
+    }
+    &__title {
+      @include text-shortener;
+      font-size: 1rem;
+      color: $color-gray-title;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      transition: color 0.25s;
+    }
+
+    &__thumbnail {
+      margin-bottom: 0;
+      transition: background-color 0.25s;
+    }
+  }
+}
+
+.film-news {
+  overflow: hidden;
+  position: relative;
+  &-row {
+    margin-right: -$gap-sm;
+    margin-left: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+  &-item {
+    position: relative;
+    &__image {
+      width: 100%;
+    }
+    &__button {
+      float: right;
+      margin-bottom: 30px;
+    }
+    &__text {
+      text-align: justify;
+    }
+  }
+}
