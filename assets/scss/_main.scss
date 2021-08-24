@@ -114,15 +114,36 @@
   }
   &-item {
     position: relative;
+    &:hover {
+      h3 > a {
+        color: $color-accent !important;
+      }
+      .thumbnail {
+        background-color: $color-accent;
+        border-color: $color-accent;
+      }
+      .btn-warning {
+        background-color: $color-accent;
+      }
+    }
     &__image {
       width: 100%;
     }
     &__button {
       float: right;
       margin-bottom: 30px;
+      transition: background-color 0.25s;
     }
     &__text {
       text-align: justify;
     }
+    &__thumbnail {
+      margin-bottom: 0;
+      transition: background-color 0.25s;
+    }
+    h3 > a {
+      transition: color 0.25s;
+    }
   }
 }
+

@@ -1,8 +1,32 @@
-// .footer {
-//     background-color: $color-dark;
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
+.footer {
+    background-color: $color-dark;
+    position: static;
+    color: $color-gray;
+    padding-top: 45px;
+    a {
+       color: $color-gray-dark;   
+       &:hover {
+           color: $color-gray;
+       }
+    }
+    &-top {
+        &__list {
+            list-style: none;
+            padding-left: 0;
+        }
+    }
 
-// }
+    &-bottom {
+        text-align: center;
+        &-item {
+            margin: 20px 0;
+            a {
+               color: $color-gray;
+               &:hover {
+                   color: $color-white;
+               }
+            }
+        }
+    } 
+
+}

@@ -21,41 +21,41 @@
 
 <body>
 <header class="header">
-      <div class="header-logo">
-            <div class="container">
-                  <strong class="header-logo__title">КиноЗал</strong>
-                  <span class="header-logo__description">Найди свое кино</span>
-            </div>
-      </div>
+  <div class="header-logo">
+    <div class="container">
+      <strong class="header-logo__title">КиноЗал</strong>
+      <span class="header-logo__description">Найди свое кино</span>
+    </div>
+  </div>
 <div class="header-menu">
-            <nav class="navbar navbar-inverse navbar-static-top">
-                  <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                    </div>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
                 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="navbar-top">
-                      <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a href="#">Главная</a></li>
-                        <li><a href="#">Фильмы</a></li>
-                        <li><a href="#">Сериалы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                      </ul>
-                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Новинки</a></li>
-                        <li><a href="#">Рейтинг</a></li>
-                        <li><a href="#">Раздачи</a></li>
-                      </ul>
-                    </div><!-- /.navbar-collapse -->
-                  </div><!-- /.container-fluid -->
-                </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-top">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a href="#">Главная</a></li>
+          <li><a href="page.html">Фильмы</a></li>
+          <li><a href="index.html">Сериалы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Новинки</a></li>
+          <li><a href="#">Рейтинг</a></li>
+          <li><a href="#">Раздачи</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 </div>
 </header>
 <div class="container">
@@ -574,7 +574,7 @@
 
       <div class="film-rating panel panel-info">
         <div class="panel-heading">Рейтинг фильмов</div>
-        <div class="film-rating__body panel-body">
+        <div class="panel-body">
           <div class="film-rating__list list-group">
             <a href="#" class="film-rating__item list-group-item">Марсианин 
               <span class="film-rating__badge badge">8.9</span></a>
@@ -606,43 +606,63 @@
   </div>
 </div>
 <footer class="footer">
-  <div class="col-md-3 col-xs-6">
-    <h4>Lorem, ipsum dolor.</h4>
-    <ul>
-      <li><a href="#">Lorem, ipsum dolor.</a></li>
-      <li><a href="#">Delectus, labore, incidunt.</a></li>
-      <li><a href="#">Eos neque, eius.</a></li>
-      <li><a href="#">Minus, omnis vel.</a></li>
-    </ul> 
-  </div>
-  <div class="col-md-3 col-xs-6">
-    <h4>Sed, ducimus perspiciatis.</h4>
-    <ul>
-      <li><a href="#">Lorem, ipsum dolor.</a></li>
-      <li><a href="#">Delectus, labore, incidunt.</a></li>
-      <li><a href="#">Eos neque, eius.</a></li>
-      <li><a href="#">Minus, omnis vel.</a></li>
-    </ul> 
-  </div>
-  <div class="col-md-3 col-xs-6">
-    <h4>Voluptatem, commodi, at.</h4>
-    <ul>
-      <li><a href="#">Lorem, ipsum dolor.</a></li>
-      <li><a href="#">Delectus, labore, incidunt.</a></li>
-      <li><a href="#">Eos neque, eius.</a></li>
-      <li><a href="#">Minus</a></li>
-      <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
-    </ul> 
-  </div>
-  <div class="col-md-3 col-xs-6">
-    <h4>Reiciendis, minima, a?</h4>
-    <ul>
-      <li><a href="#">Lorem, ipsum dolor.</a></li>
-      <li><a href="#">Delectus, labore, incidunt.</a></li>
-      <li><a href="#">Eos neque, eius.</a></li>
-      <li><a href="#">Minus</a></li>
-      <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
-    </ul> 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="footer-top">
+            <div class="footer-top col-md-3 col-xs-6">
+              <h4>Lorem ipsum dolor sit.</h4>
+              <ul class="footer-top__list">
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Delectus, labore, incidunt.</a></li>
+                <li><a href="#">Eos neque, eius.</a></li>
+                <li><a href="#">Minus, omnis vel.</a></li>
+              </ul> 
+            </div>
+            <div class="footer-top col-md-3 col-xs-6">
+              <h4>Voluptatem, commodi, at.</h4>
+              <ul class="footer-top__list">
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Delectus, labore, incidunt.</a></li>
+                <li><a href="#">Eos neque, eius.</a></li>
+                <li><a href="#">Minus, omnis vel.</a></li>
+                <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
+              </ul> 
+            </div>
+            <div class="footer-top col-md-3 col-xs-6">
+              <h4>Sed, ducimus perspiciatis.</h4>
+              <ul class="footer-top__list">
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Delectus, labore, incidunt.</a></li>
+                <li><a href="#">Eos neque, eius.</a></li>
+                <li><a href="#">Minus, omnis vel.</a></li>
+              </ul> 
+            </div>
+            <div class="footer-top col-md-3 col-xs-6">
+              <h4>Reiciendis, minima, a?</h4>
+              <ul class="footer-top__list">
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Delectus, labore, incidunt.</a></li>
+                <li><a href="#">Eos neque, eius.</a></li>
+                <li><a href="#">Minus, omnis vel.</a></li>
+                <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-bottom">
+            <div class="footer-bottom-item col-xs-12">
+              <strong>
+                <a href="https://fomenko.top/">Учебный шаблон Bootstrap v3.4.1. Разработка - Андрей Фоменко</a>
+              </strong>
+            </div>
+          </div>
+        </div>
+    
+     </div>
+
   </div>
 </footer>
 
