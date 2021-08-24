@@ -399,21 +399,11 @@ p {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-
-.footer {
-  background-color: #232323;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li {
     margin: 5px;
@@ -428,7 +418,6 @@ p {
     margin: 5px 0 5px 5px;
   }
 }
-
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
@@ -437,7 +426,6 @@ p {
     margin-top: -7.5px;
   }
 }
-
 @media (max-width: 575.8px) {
   .header-logo__title {
     font-size: 2.5rem;
