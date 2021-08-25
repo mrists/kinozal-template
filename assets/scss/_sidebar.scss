@@ -1,120 +1,129 @@
 .left-sidebar {
-    @extend %margin-bottom-lg;
+  @extend %margin-bottom-lg;
 }
 
-.vertical-slider{
-    border-radius: 4px;
-    overflow: hidden;
-    &__image {
-        width: 100%;
-    }
+.vertical-slider {
+  overflow: hidden;
+
+  border-radius: 4px;
+  &__image {
+    width: 100%;
+  }
 }
 
 $image-size: 75px;
 $image-size-witch-padding: $image-size + $gap-md;
 
 .site-news-item {
-    position: relative;
-    min-height: $image-size-witch-padding;
-    clear: both;
+  position: relative;
 
-    &:not(:last-child) {
-        margin-bottom: $gap;
-        &::after {
-            position: absolute;
-            content: "";
-            height: 1px;
-            width: calc(100% - #{$image-size-witch-padding});
-            background-color: $color-gray;
-            right: 0;
-            bottom: -4px;
-        }
+  clear: both;
+
+  min-height: $image-size-witch-padding;
+
+  &:not(:last-child) {
+    margin-bottom: $gap;
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+
+      width: calc(100% - #{$image-size-witch-padding});
+      height: 1px;
+
+      content: "";
+
+      background-color: $color-gray;
     }
+  }
 
-    &:hover {
-        a {
-            color: $color-accent;
-        }
-        .thumbnail {
-            border-color: $color-accent;
-            background-color: $color-accent;
-        }
+  &:hover {
+    a {
+      color: $color-accent;
     }
-
-    &__title {
-        margin-bottom: 0.5em;
+    .thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
     }
+  }
 
-    &__thumbnail {
-        float: left;
-        margin: 0 $gap-md 0 0;
-        width: $image-size;
-    }
+  &__title {
+    margin-bottom: 0.5em;
+  }
 
-    &__image {
-        width: 100%;
-    }
+  &__thumbnail {
+    float: left;
 
-    &__link {
-        transition: color 0.5s;
-        font-size: 1rem;
+    width: $image-size;
+    margin: 0 $gap-md 0 0;
+  }
 
-        @include block-shortener (1rem, 1.5, 50px, 2)
+  &__image {
+    width: 100%;
+  }
 
-        // display: -webkit-box;
-        // -webkit-line-clamp: 2;
-        // -webkit-box-orient: vertical;
-        // overflow: hidden;
-    }
+  &__link {
+    transition: color 0.5s;
 
-    &__date {
-        text-align: right;
-        color: $color-gray-dark;
-        font-size: 0.8rem;
-    }
-    
-}
+    font-size: 1rem;
 
-.film-rating__body {
-    padding-right: 0;
-    padding-left: 0;
+    @include block-shortener (1rem, 1.5, 50px, 2);
+
+    // display: -webkit-box;
+    // -webkit-line-clamp: 2;
+    // -webkit-box-orient: vertical;
+    // overflow: hidden;
+  }
+
+  &__date {
+    text-align: right;
+
+    color: $color-gray-dark;
+
+    font-size: 0.8rem;
+  }
 }
 
 .film-rating {
-    &__list {
-        margin-bottom: 0;
-    }
+  &__list {
+    margin-bottom: 0;
+  }
+  &__body {
+    padding-right: 0;
+    padding-left: 0;
+  }
 
-    &__item {
-        margin-right: -1px;
-        margin-left: -1px;
-        background-color: transparent;
-        color: $color-primary !important;
-        padding-right: 50px;
-        &:first-child {
-            border-top: none;
-            border-radius: 0;
-        }
-        &:last-child {
-            border-bottom: none;
-            border-radius: 0;
-        }
-        &:hover,
-        &:focus {
-            border-color: $color-accent;
-            color: $color-white !important;
-            background-color: $color-accent !important;
-            .badge {
-                background-color: $color-black;
-            }
-        }
-    }
+  &__item {
+    margin-right: -1px;
+    margin-left: -1px;
+    padding-right: 50px;
 
-    &__badge {
-        position: absolute;
-        right: $gap;
-        top: 50%;
-        transform: translateY(-50%);
+    color: $color-primary !important;
+    background-color: transparent;
+    &:first-child {
+      border-top: none;
+      border-radius: 0;
     }
-    
+    &:last-child {
+      border-bottom: none;
+      border-radius: 0;
+    }
+    &:hover,
+    &:focus {
+      color: $color-white !important;
+      border-color: $color-accent;
+      background-color: $color-accent !important;
+      .badge {
+        background-color: $color-black;
+      }
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 50%;
+    right: $gap;
+
+    transform: translateY(-50%);
+  }
 }

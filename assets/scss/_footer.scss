@@ -1,32 +1,34 @@
 .footer {
-    background-color: $color-dark;
-    position: static;
-    color: $color-gray;
-    padding-top: 45px;
-    a {
-       color: $color-gray-dark;   
-       &:hover {
-           color: $color-gray;
-       }
-    }
-    &-top {
-        &__list {
-            list-style: none;
-            padding-left: 0;
-        }
-    }
+  position: static;
 
-    &-bottom {
-        text-align: center;
-        &-item {
-            margin: 20px 0;
-            a {
-               color: $color-gray;
-               &:hover {
-                   color: $color-white;
-               }
-            }
-        }
-    } 
+  padding-top: 45px;
 
+  color: $color-gray;
+  background-color: $color-dark;
+  a {
+    color: $color-gray-dark;
+    &:hover {
+      color: $color-gray;
+    }
+  }
+  &-top {
+    &__list {
+      padding-left: 0;
+
+      list-style: none;
+    }
+  }
+
+  &-bottom {
+    text-align: center;
+    &-item {
+      margin: 20px 0;
+      a {
+        color: $color-gray;
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
 }

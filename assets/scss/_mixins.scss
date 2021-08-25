@@ -43,3 +43,9 @@
 
   border: 0;
 }
+
+@mixin hidden-relative {
+  position: relative;
+
+  overflow: hidden;
+}

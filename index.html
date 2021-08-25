@@ -43,9 +43,9 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-top">
         <ul class="nav navbar-nav navbar-left">
-          <li class="active"><a href="#">Главная</a></li>
+          <li class="active"><a href="index.html">Главная</a></li>
           <li><a href="page.html">Фильмы</a></li>
-          <li><a href="index.html">Сериалы</a></li>
+          <li><a href="#">Сериалы</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -65,14 +65,16 @@
       <div class="site-search panel panel-info hidden-md hidden-lg">
         <div class="panel-heading">Поиск</div>
         <div class="panel-body">
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control" action="search" placeholder="Поиск по сайту">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="submit">
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-              </button>
-            </span>
-          </div>
+          <form action="search">
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control" placeholder="Поиск по сайту">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+              </span>
+            </div>
+          </form>
         </div>
       </div>
 
@@ -124,7 +126,7 @@
       </div>
 
       <section class="new-films">
-        <h1 class="new-films__title">Новые фильмы</h1>
+        <h1>Новые фильмы</h1>
         <div class="new-films-row row">
           <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
             <div class="new-films-item__thumbnail thumbnail">
@@ -458,14 +460,16 @@
       <div class="site-search panel panel-info visible-md visible-lg">
         <div class="panel-heading">Поиск</div>
         <div class="panel-body">
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control" action="search" placeholder="Поиск по сайту">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="submit">
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-              </button>
-            </span>
-          </div>
+          <form action="search">
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control" placeholder="Поиск по сайту">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+              </span>
+            </div>
+          </form>
         </div>
       </div>
 
@@ -574,7 +578,7 @@
 
       <div class="film-rating panel panel-info">
         <div class="panel-heading">Рейтинг фильмов</div>
-        <div class="panel-body">
+        <div class="film-rating__body panel-body">
           <div class="film-rating__list list-group">
             <a href="#" class="film-rating__item list-group-item">Марсианин 
               <span class="film-rating__badge badge">8.9</span></a>
@@ -663,6 +667,7 @@
     
      </div>
 
+    </div>
   </div>
 </footer>
 

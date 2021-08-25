@@ -82,9 +82,20 @@
 }
 
 .thumbnail {
-  -webkit-transition: background-color 0.2g5s;
-  -o-transition: background-color 0.2g5s;
-  transition: background-color 0.2g5s;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.embed-responsive {
+  border: 1px solid #d5d5d5;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.well {
+  border-color: #d5d5d5;
+  background-color: #f4f4f4;
 }
 
 html {
@@ -107,14 +118,27 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
-h2 {
-  font-size: 2.5rem;
+h1 {
+  position: relative;
+  margin-top: -10px;
+  margin-bottom: 3rem;
   color: #333333;
   font-family: "PT Serif", serif;
-  margin-bottom: 45px;
-  margin-top: 60px;
-  margin-left: 45px;
+  line-height: 1.1;
+}
+h1::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
+
+h2 {
   overflow: hidden;
+  color: #333333;
+  font-family: "PT Serif", serif;
   line-height: 1.1;
 }
 h2::before {
@@ -126,19 +150,16 @@ h2::before {
   border-bottom: 3px solid #f0ad4f;
 }
 h2::after {
-  content: "";
-  height: 2px;
-  width: 100%;
   position: absolute;
-  border-bottom: 3px solid #f0ad4f;
+  width: 100%;
+  height: 2px;
   margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
 }
 
 h3 {
   margin-top: 20px;
-  -webkit-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s;
 }
 
 p {
@@ -177,32 +198,15 @@ p {
 .new-films {
   overflow: hidden;
 }
-.new-films__title {
-  font-size: 3rem;
-  font-family: "PT Serif", serif;
-  margin-bottom: 3rem;
-  margin-top: -10px;
-  line-height: 1.1;
-  color: #333333;
-  position: relative;
-}
-.new-films__title::after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  border-bottom: 3px solid #f0ad4f;
-  margin: 0.85em 0 0 15px;
-}
 .new-films-row {
   margin-right: -7.5px;
-  margin-left: -7.5px;
   margin-bottom: -15px;
+  margin-left: -7.5px;
 }
 .new-films-item {
+  margin-bottom: 15px;
   padding-right: 7.5px;
   padding-left: 7.5px;
-  margin-bottom: 15px;
 }
 .new-films-item:hover .new-films-item__thumbnail {
   background-color: #df8a13;
@@ -211,19 +215,19 @@ p {
   color: #ffffff;
 }
 .new-films-item__title {
+  margin: 0;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+  text-align: center;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 700;
   display: block;
   overflow: hidden;
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  font-size: 1rem;
-  color: #333333;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  -webkit-transition: color 0.25s;
-  -o-transition: color 0.25s;
-  transition: color 0.25s;
 }
 .new-films-item__thumbnail {
   margin-bottom: 0;
@@ -231,20 +235,23 @@ p {
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
 }
+.new-films-item__image {
+  width: 100%;
+}
 
 .top-films {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .top-films-row {
   margin-right: -7.5px;
-  margin-left: -7.5px;
   margin-bottom: -15px;
+  margin-left: -7.5px;
 }
 .top-films-item {
+  margin-bottom: 15px;
   padding-right: 7.5px;
   padding-left: 7.5px;
-  margin-bottom: 15px;
 }
 .top-films-item:hover .top-films-item__thumbnail {
   background-color: #df8a13;
@@ -253,19 +260,19 @@ p {
   color: #ffffff;
 }
 .top-films-item__title {
+  margin: 0;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+  text-align: center;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 700;
   display: block;
   overflow: hidden;
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  font-size: 1rem;
-  color: #333333;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  -webkit-transition: color 0.25s;
-  -o-transition: color 0.25s;
-  transition: color 0.25s;
 }
 .top-films-item__thumbnail {
   margin-bottom: 0;
@@ -273,15 +280,18 @@ p {
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
 }
+.top-films-item__image {
+  width: 100%;
+}
 
 .film-news {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .film-news-row {
   margin-right: -7.5px;
-  margin-left: -7.5px;
   margin-bottom: -15px;
+  margin-left: -7.5px;
 }
 .film-news-item {
   position: relative;
@@ -290,8 +300,8 @@ p {
   color: #df8a13 !important;
 }
 .film-news-item:hover .thumbnail {
-  background-color: #df8a13;
   border-color: #df8a13;
+  background-color: #df8a13;
 }
 .film-news-item:hover .btn-warning {
   background-color: #df8a13;
@@ -321,9 +331,49 @@ p {
   transition: color 0.25s;
 }
 
-.vertical-slider {
-  border-radius: 4px;
+.film-info {
   overflow: hidden;
+}
+.film-info__wrapper {
+  white-space: nowrap;
+  font-size: 1.2em;
+}
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+.film-info .badge {
+  font-size: 0.8em;
+}
+
+.film-description {
+  position: relative;
+  overflow: hidden;
+}
+
+.film-comments {
+  position: relative;
+  overflow: hidden;
+}
+.film-comments .glyphicon {
+  margin-right: 7px;
+}
+
+.film-comment-form {
+  position: relative;
+  overflow: hidden;
+}
+.film-comment-form textarea {
+  max-width: 100%;
+  height: 214px;
+}
+.film-comment-form .btn {
+  float: right;
+  margin-top: 15px;
+}
+
+.vertical-slider {
+  overflow: hidden;
+  border-radius: 4px;
 }
 .vertical-slider__image {
   width: 100%;
@@ -331,20 +381,20 @@ p {
 
 .site-news-item {
   position: relative;
-  min-height: 85px;
   clear: both;
+  min-height: 85px;
 }
 .site-news-item:not(:last-child) {
   margin-bottom: 15px;
 }
 .site-news-item:not(:last-child)::after {
   position: absolute;
-  content: "";
-  height: 1px;
-  width: calc(100% - 85px);
-  background-color: #d5d5d5;
   right: 0;
   bottom: -4px;
+  width: calc(100% - 85px);
+  height: 1px;
+  content: "";
+  background-color: #d5d5d5;
 }
 .site-news-item:hover a {
   color: #df8a13;
@@ -358,8 +408,8 @@ p {
 }
 .site-news-item__thumbnail {
   float: left;
-  margin: 0 10px 0 0;
   width: 75px;
+  margin: 0 10px 0 0;
 }
 .site-news-item__image {
   width: 100%;
@@ -383,20 +433,19 @@ p {
   font-size: 0.8rem;
 }
 
+.film-rating__list {
+  margin-bottom: 0;
+}
 .film-rating__body {
   padding-right: 0;
   padding-left: 0;
 }
-
-.film-rating__list {
-  margin-bottom: 0;
-}
 .film-rating__item {
   margin-right: -1px;
   margin-left: -1px;
-  background-color: transparent;
-  color: #165690 !important;
   padding-right: 50px;
+  color: #165690 !important;
+  background-color: transparent;
 }
 .film-rating__item:first-child {
   border-top: none;
@@ -407,8 +456,8 @@ p {
   border-radius: 0;
 }
 .film-rating__item:hover, .film-rating__item:focus {
-  border-color: #df8a13;
   color: #ffffff !important;
+  border-color: #df8a13;
   background-color: #df8a13 !important;
 }
 .film-rating__item:hover .badge, .film-rating__item:focus .badge {
@@ -416,18 +465,18 @@ p {
 }
 .film-rating__badge {
   position: absolute;
-  right: 15px;
   top: 50%;
+  right: 15px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .footer {
-  background-color: #232323;
   position: static;
-  color: #d5d5d5;
   padding-top: 45px;
+  color: #d5d5d5;
+  background-color: #232323;
 }
 .footer a {
   color: #6f6f6f;
@@ -436,8 +485,8 @@ p {
   color: #d5d5d5;
 }
 .footer-top__list {
-  list-style: none;
   padding-left: 0;
+  list-style: none;
 }
 .footer-bottom {
   text-align: center;
@@ -452,6 +501,18 @@ p {
   color: #ffffff;
 }
 @media (min-width: 576px) {
+  h3 {
+    font-size: 24px;
+  }
+  h1 {
+    margin-top: -10px;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+  h2 {
+    margin: 60px 0 45px 45px;
+    font-size: 2.5rem;
+  }
   .header-logo__title {
     font-size: 3.5rem;
   }
@@ -479,6 +540,17 @@ p {
   }
 }
 @media (max-width: 575.8px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+  h1 {
+    margin: 0 0 1em;
+    font-size: 2rem;
+  }
+  h2 {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
   .header-logo__title {
     font-size: 2.5rem;
   }

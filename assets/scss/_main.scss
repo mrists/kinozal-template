@@ -11,106 +11,103 @@
 
 .new-films {
   overflow: hidden;
-  &__title {
-    font-size: 3rem;
-    font-family: $font-header;
-    margin-bottom: 3rem;
-    margin-top: -$gap-md;
-    line-height: 1.1;
-    color: $color-gray-title;
-    position: relative;
-    &::after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      position: absolute;
-      border-bottom: 3px solid $color-accent-light;
-      margin: 0.85em 0 0 15px;
-    }
-  }
-
   &-row {
     margin-right: -$gap-sm;
-    margin-left: -$gap-sm;
     margin-bottom: -$gap;
+    margin-left: -$gap-sm;
   }
 
   &-item {
+    margin-bottom: $gap;
     padding-right: $gap-sm;
     padding-left: $gap-sm;
-    margin-bottom: $gap;
     &:hover {
       .new-films-item__thumbnail {
         background-color: $color-accent;
       }
       .new-films-item__title {
-        color: $color-white
+        color: $color-white;
       }
     }
-  
+
     &__title {
-      @include text-shortener;
-      font-size: 1rem;
-      color: $color-gray-title;
-      font-weight: 700;
-      text-align: center;
       margin: 0;
+
       transition: color 0.25s;
+      text-align: center;
+
+      color: $color-gray-title;
+
+      font-size: 1rem;
+      font-weight: 700;
+
+      @include text-shortener;
     }
 
     &__thumbnail {
       margin-bottom: 0;
+
       transition: background-color 0.25s;
+    }
+    &__image {
+      width: 100%;
     }
   }
 }
 
 .top-films {
-  overflow: hidden;
-  position: relative;
+  @include hidden-relative;
 
   &-row {
     margin-right: -$gap-sm;
-    margin-left: -$gap-sm;
     margin-bottom: -$gap;
+    margin-left: -$gap-sm;
   }
 
   &-item {
+    margin-bottom: $gap;
     padding-right: $gap-sm;
     padding-left: $gap-sm;
-    margin-bottom: $gap;
     &:hover {
       .top-films-item__thumbnail {
         background-color: $color-accent;
       }
       .top-films-item__title {
-        color: $color-white
+        color: $color-white;
       }
     }
     &__title {
-      @include text-shortener;
-      font-size: 1rem;
-      color: $color-gray-title;
-      font-weight: 700;
-      text-align: center;
       margin: 0;
+
       transition: color 0.25s;
+      text-align: center;
+
+      color: $color-gray-title;
+
+      font-size: 1rem;
+      font-weight: 700;
+
+      @include text-shortener;
     }
 
     &__thumbnail {
       margin-bottom: 0;
+
       transition: background-color 0.25s;
+    }
+    &__image {
+      width: 100%;
     }
   }
 }
 
 .film-news {
-  overflow: hidden;
-  position: relative;
+  @include hidden-relative;
+
   &-row {
     margin-right: -$gap-sm;
-    margin-left: -$gap-sm;
     margin-bottom: -$gap;
+    margin-left: -$gap-sm;
   }
   &-item {
     position: relative;
@@ -119,8 +116,8 @@
         color: $color-accent !important;
       }
       .thumbnail {
-        background-color: $color-accent;
         border-color: $color-accent;
+        background-color: $color-accent;
       }
       .btn-warning {
         background-color: $color-accent;
@@ -131,7 +128,9 @@
     }
     &__button {
       float: right;
+
       margin-bottom: 30px;
+
       transition: background-color 0.25s;
     }
     &__text {
@@ -139,6 +138,7 @@
     }
     &__thumbnail {
       margin-bottom: 0;
+
       transition: background-color 0.25s;
     }
     h3 > a {

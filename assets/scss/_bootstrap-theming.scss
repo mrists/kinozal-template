@@ -99,20 +99,43 @@
     position: absolute;
     top: 0;
     right: $gap;
+
     margin-right: -5px;
+
     border: none;
     a {
       padding: 14px 5px 12px !important;
+
       color: $color-gray;
       border: none !important;
       background-color: transparent !important;
-  }
-  .active a {
-    color: $color-white !important;
-  }
+    }
+    .active a {
+      color: $color-white !important;
+    }
   }
 }
 
 .thumbnail {
-  transition: background-color 0.2g5s;
+  transition: background-color 0.25s;
+}
+
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.well {
+  border-color: $color-gray;
+  background-color: $color-gray-light;
+}
+
+h3 {
+  @include xs-min {
+    font-size: 24px;
+  }
+  @include xs {
+    font-size: 1.25rem;
+  }
 }
